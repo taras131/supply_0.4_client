@@ -1,11 +1,11 @@
 import React from 'react';
 
-const Orders = () => {
+const NotFound = () => {
     return (
         <div>
-            Orders
+            NotFound.tsx
         </div>
     );
 };
 
-export default Orders;
+export default NotFound;
