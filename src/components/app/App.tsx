@@ -1,6 +1,4 @@
 import React from 'react';
-import styles from "./App.module.scss";
-import Header from "../header/Header";
 import {createBrowserRouter, RouterProvider} from "react-router-dom";
 import PaymentInvoices from "../../pages/paymentInvoice/PaymentInvoices";
 import ConsignmentNotes from "../../pages/consignmentNote/ConsignmentNotes";

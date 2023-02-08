@@ -1,0 +1,11 @@
+@use 'src/styles/variables' as vars;
+
+.wrapper {
+  background-color: vars.$dark-secondary;
+  ul {
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+}

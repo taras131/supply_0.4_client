@@ -1,0 +1,5 @@
+@use 'src/styles/variables' as vars;
+
+.wrapper {
+  background-color: vars.$dark-secondary;
+}
