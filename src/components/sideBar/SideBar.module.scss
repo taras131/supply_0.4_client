@@ -1,5 +1,52 @@
 @use 'src/styles/variables' as vars;
 
 .wrapper {
-  background-color: vars.$dark-secondary;
+  background-color: #866ec7;
+  transition: all 0.3s;
+  padding: 48px 24px 24px 24px;
+  position: relative;
+  width: 250px;
+
+  .menu_toggle {
+    position: absolute;
+    top: 20px;
+    right: 0;
+    margin-right: -20px;
+    background: #6749b9;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+
+    span {
+      display: block;
+      height: 2px;
+      width: 20px;
+      background-color: #fff;
+      position: relative;
+      left: 10px;
+      &:before, &:after {
+        content: "";
+        height: 2px;
+        width: 20px;
+        background-color: #fff;
+        position: absolute;
+        left: 0;
+      }
+      &:before {
+        top: 7px;
+      }
+      &:after{
+        top: -7px;
+      }
+    }
+  }
+}
+.hidden{
+  left: -250px;
+  .menu_toggle {
+    right: -30px;
+  }
 }

@@ -1,11 +1,16 @@
 @use 'src/styles/variables' as vars;
 
 .wrapper {
-  background-color: vars.$dark-secondary;
+  h1 {
+    font-size: 2.5rem;
+    color: #fff
+  }
+
   ul {
+    margin-top: 20px;
     list-style-type: none;
     display: flex;
     flex-direction: column;
-    gap: 10px;
+
   }
 }

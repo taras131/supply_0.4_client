@@ -10,7 +10,11 @@ interface ISideBarNavigationLink {
 const SideBarNavigationLink: FC<ISideBarNavigationLink> = ({patch, title}) => {
     return (
         <li>
-            <Link className={styles.link} to={patch}>{title}</Link>
+            <Link className={styles.link} to={patch}>
+                <div className={styles.title}>
+                    {title}
+                </div>
+            </Link>
         </li>
     );
 };

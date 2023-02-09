@@ -1,9 +1,26 @@
-li {
-  height: 30px;
+@use 'src/styles/variables' as vars;
 
+li {
 
   .link {
+    transition: .3s all ease;
+    color: rgba(255, 255, 255, 0.8);
     text-decoration: none;
-    cursor: pointer;
+    height: 50px;
+    font-size: 20px;
+
+    &:hover, &:focus {
+      color: #fff;
+      text-decoration: none !important;
+      outline: none !important;
+      box-shadow: none;
+    }
+
+    .title {
+      height: 50px;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+      display: flex;
+      align-items: center;
+    }
   }
 }
